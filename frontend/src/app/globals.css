@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-primary: #1890ff;
+  --color-primary-hover: #377dff;
+  --color-nav: #00acff;
+  --color-success: #0acf83;
+
+  --color-canvas: #f0f2f5;
+  --color-surface: #ffffff;
+  --color-input: #f5f5f5;
+  --color-divider: #dfdfdf;
+
+  --color-heading: #212121;
+  --color-body: #2d3748;
+  --color-muted: #666666;
+  --color-label: #4a5568;
+
+  --color-comment: #f6f6f6;
+  --color-reaction: #fbfcfd;
+
+  --font-sans: var(--font-poppins), system-ui, sans-serif;
+
+  --breakpoint-sm: 36rem;
+  --breakpoint-md: 48rem;
+  --breakpoint-lg: 62rem;
+  --breakpoint-xl: 75rem;
+  --breakpoint-2xl: 87.5rem;
+}
+
+.dark {
+  --color-canvas: #232e42;
+  --color-surface: #112032;
+  --color-input: #232e42;
+  --color-comment: #232e42;
+  --color-reaction: #11263c;
+  --color-divider: #2a3a52;
+
+  --color-heading: #ffffff;
+  --color-body: #ffffff;
+  --color-muted: #8c8f95;
+  --color-label: #b0b8c4;
+}
+
+body {
+  background-color: var(--color-canvas);
+  color: var(--color-body);
+  font-family: var(--font-sans);
+}
+
+@keyframes reactionPop {
+  from {
+    opacity: 0;
+    transform: translateY(8px) scale(0.85);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes reactionRise {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
