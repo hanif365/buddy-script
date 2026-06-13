@@ -1,3 +1,6 @@
+<img width="1901" height="994" alt="buddy-script" src="https://github.com/user-attachments/assets/e1959f15-4b02-46ed-81e8-04573bd6bfd4" />
+
+
 # BuddyScript
 
 A small social feed app built as a full stack task. Users can register, log in,
