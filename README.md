@@ -40,7 +40,6 @@ Env values:
 - `CLOUDINARY_CLOUD_NAME`, `CLOUDINARY_API_KEY`, `CLOUDINARY_API_SECRET`
 - `GOOGLE_CLIENT_ID`, `GOOGLE_CLIENT_SECRET` (for Google sign in)
 
-Run `npm run seed` to add a few demo users and posts.
 
 ### Frontend
 
